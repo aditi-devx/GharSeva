@@ -1,0 +1,90 @@
+ * {
+     margin: 0;
+     padding: 0;
+ }
+
+ .main {
+     margin: 0;
+     padding: 0;
+     min-height: 100vh;
+     display: flex;
+     justify-content: flex-start;
+     background-color: #f0f0f0;
+     font-family: 'Segoe UI', sans-serif;
+
+     background-image: url('P2logo.png');
+     background-repeat: no-repeat;
+     background-position: right center;
+     background-size: contain;
+     background-attachment: fixed;
+ }
+
+ /* style.css */
+
+
+ .login-box {
+     margin-left: 80px;
+     margin-top: 200px;
+     background: white;
+     padding: 60px;
+     border-radius: 16px;
+     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+     width: 350px;
+     text-align: center;
+ }
+
+ .login-box h2 {
+     margin-bottom: 50px;
+     font-size: 24px;
+     color: #333;
+ }
+
+ .login-buttons button {
+     width: 100%;
+     padding: 14px;
+     margin: 10px 0;
+     background-color: #007bff;
+     border: none;
+     border-radius: 8px;
+     color: white;
+     font-size: 16px;
+     cursor: pointer;
+     transition: background 0.3s;
+ }
+
+ .login-buttons button:hover {
+     background-color: #0056b3;
+ }
+
+ .top-left-logo {
+     position: absolute;
+     top: 20px;
+     left: 20px;
+     width: 100px;
+     /* Adjust as needed */
+     height: auto;
+     z-index: 10;
+     /* Make sure it stays ave background */
+ }
+
+ h1 {
+     margin: 50px 0 0 70px;
+     /* top right bottom left */
+     position: absolute;
+     top: 20px;
+     left: 140px;
+     padding: 10px;
+     font-size: 30px;
+     color: #333;
+ }
+
+ h3 {
+     margin: 40px 0 0 60px;
+     /* top right bottom left */
+     position: absolute;
+     top: 80px;
+     left: 0px;
+     padding: 10px;
+     font-size: 32px;
+     color: #333;
+ }
