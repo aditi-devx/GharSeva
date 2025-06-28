@@ -1,0 +1,214 @@
+.search-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  width: 60%;
+  max-width: 500px;
+  border: 2px solid black;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0 0 8px black;
+  background-image: url();
+  margin-top: 68px;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 12px 20px;
+  border: none;
+  font-size: 16px;
+  outline: none;
+}
+
+.search-bar button {
+  padding: 12px 20px;
+  border: none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.search-bar button:hover {
+  background-color: #333;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 0;
+}
+
+/* Logo and brand name */
+
+/* Navigation links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #00ffe1;
+}
+.logo-container {
+  position: absolute;
+  top: 1px;
+  right: 20px;
+  z-index: 100;
+}
+
+/* Dropdown container */
+.dropdown {
+  position: relative;
+}
+
+/* Button (Services) */
+.dropbtn {
+  color: black;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+  cursor: pointer;
+}
+
+/* Dropdown menu */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: black;
+  min-width: 160px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  border-radius: 8px;
+}
+
+.dropdown-content li {
+  list-style: none;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  display: block;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background-color: #f0f0f0;
+}
+/* Sidebar aligned to the right */
+.sidebar {
+  width: 160px;
+  height: calc(100vh - 80px); /* Adjust height so it doesn't overlap navbar/search bar */
+  background-color: #000;
+  color: white;
+  padding: 10px 15px;
+  position: fixed;
+  top: 80px; /* Push it below navbar + search bar */
+  right: 0;
+  box-shadow: -4px 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  font-size: 14px;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+.sidebar h2 {
+  font-size: 20px;
+  margin-bottom: 25px;
+  color: #4CAF50;
+  text-align: center;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 16px;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  padding: 10px 12px;
+  display: block;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, padding-left 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+  background-color: #4CAF50;
+  padding-left: 20px;
+}
+
+/* Adjust main content if needed */
+.main-content {
+  margin-right: 180px; /* leave space for sidebar on the right */
+  padding: 40px;
+  width: calc(100% - 180px);
+}
+
+h1{
+  font-size: 30px;
+  color: #000;
+  margin-top: 30px;
+  margin-left: 300px;
+}
+.circle-button-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  max-width: 340px;
+  margin: 60px auto 0;
+}
+
+.circle-button {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 2px solid black;
+  overflow: hidden;
+  background-color: white;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 0;
+}
+
+.circle-button img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Hover effect */
+.circle-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
+}
