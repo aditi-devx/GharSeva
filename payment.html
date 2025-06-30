@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Help |CUSTOMER LOGIN </title>
+    <link rel="stylesheet" href="payment-style.css">
+</head>
+
+<body>
+<div class="bill-summary">
+  <h2>Billing Summary</h2>
+  <p><strong>Service:</strong> Electrician</p>
+  <p><strong>Date & Time:</strong> 2 July, 4:00 PM</p>
+  <p><strong>Service Charge:</strong> ₹500</p>
+  <p><strong>GST (18%):</strong> ₹90</p>
+  <hr />
+  <p><strong>Total Amount:</strong> ₹590</p>
+</div>
+<div class="payment-section">
+  <h2>Choose Payment Method</h2>
+  <label
+    ><input type="radio" name="payment" /> UPI (Google Pay / PhonePe /
+    Paytm)</label
+  ><br />
+  <label><input type="radio" name="payment" /> Debit/Credit Card</label><br />
+  <label><input type="radio" name="payment" /> Net Banking</label><br />
+  <label><input type="radio" name="payment" /> Cash on Service</label><br />
+
+  <button onclick="makePayment()">Pay ₹590</button>
+</div>
+<script>
+  function makePayment() {
+    alert("Payment Successful! Thank you for booking with Ghr Seva.");
+    // Redirect to thank-you or confirmation page
+    window.location.href = "thankyou.html";
+  }
+</script>
+
+
+
+</body>
+
+
+

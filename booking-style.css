@@ -1,0 +1,63 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.booking-card {
+  border: 1px solid #ddd;
+  padding: 15px 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  background: #fafafa;
+}
+
+.booking-card h3 {
+  margin: 0 0 10px;
+}
+
+.booking-card p {
+  margin: 5px 0;
+}
+
+.status {
+  font-weight: bold;
+  color: green;
+}
+
+.status.cancelled {
+  color: red;
+}
+
+.actions button {
+  padding: 8px 12px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.actions .cancel-btn {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.actions .reschedule-btn {
+  background-color: #3498db;
+  color: white;
+}
